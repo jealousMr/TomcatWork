@@ -1,0 +1,41 @@
+2018-11-23 23:58:33 HttpConnector Opening server socket on all host IP addresses
+2018-11-23 23:58:33 HttpConnector[8080] Starting background thread
+2018-11-23 23:58:33 HttpProcessor[8080][0] Starting background thread
+2018-11-23 23:58:33 HttpProcessor[8080][1] Starting background thread
+2018-11-23 23:58:33 HttpProcessor[8080][2] Starting background thread
+2018-11-23 23:58:34 HttpProcessor[8080][3] Starting background thread
+2018-11-23 23:58:34 HttpProcessor[8080][4] Starting background thread
+2018-11-23 23:58:34 starting Context
+2018-11-23 23:58:34 Context started
+2018-11-23 23:58:52 HttpProcessor[8080][4] process.invoke
+java.lang.NoClassDefFoundError: org/apache/tomcat/util/log/SystemLogHandler
+	at org.apache.catalina.connector.RequestBase.recycle(RequestBase.java:562)
+	at org.apache.catalina.connector.HttpRequestBase.recycle(HttpRequestBase.java:417)
+	at org.apache.catalina.connector.http.HttpRequestImpl.recycle(HttpRequestImpl.java:195)
+	at org.apache.catalina.connector.http.HttpProcessor.process(HttpProcessor.java:1101)
+	at org.apache.catalina.connector.http.HttpProcessor.run(HttpProcessor.java:1151)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.ClassNotFoundException: org.apache.tomcat.util.log.SystemLogHandler
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 6 more
+
+2018-11-23 23:59:06 HttpProcessor[8080][3] process.invoke
+java.lang.NoClassDefFoundError: org/apache/tomcat/util/log/SystemLogHandler
+	at org.apache.catalina.connector.RequestBase.recycle(RequestBase.java:562)
+	at org.apache.catalina.connector.HttpRequestBase.recycle(HttpRequestBase.java:417)
+	at org.apache.catalina.connector.http.HttpRequestImpl.recycle(HttpRequestImpl.java:195)
+	at org.apache.catalina.connector.http.HttpProcessor.process(HttpProcessor.java:1101)
+	at org.apache.catalina.connector.http.HttpProcessor.run(HttpProcessor.java:1151)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2018-11-23 23:59:21 HttpProcessor[8080][3] process.invoke
+java.lang.NoClassDefFoundError: org/apache/tomcat/util/log/SystemLogHandler
+	at org.apache.catalina.connector.RequestBase.recycle(RequestBase.java:562)
+	at org.apache.catalina.connector.HttpRequestBase.recycle(HttpRequestBase.java:417)
+	at org.apache.catalina.connector.http.HttpRequestImpl.recycle(HttpRequestImpl.java:195)
+	at org.apache.catalina.connector.http.HttpProcessor.process(HttpProcessor.java:1101)
+	at org.apache.catalina.connector.http.HttpProcessor.run(HttpProcessor.java:1151)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+

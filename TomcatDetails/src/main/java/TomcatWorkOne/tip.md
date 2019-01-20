@@ -1,0 +1,1 @@
+﻿#第一个程序（模拟请求响应）>TomcatWorkOne>>HttpServer.java ,Request.java,Response.java###1，HttpServer.java定义WEB_ROOT目录文件位置，定义SHUTDOWN停止服务命令，使用Socket进行通信，监听。###2，Request.java对于此>Request对象>>parse(),parseUri()方法构造uri属性###3，Response.javaset方法设置Request对象，通过sendStaticResource函数发送WEB_ROOT相应的请求信息。
